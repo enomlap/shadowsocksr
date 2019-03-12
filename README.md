@@ -46,12 +46,17 @@ To check the log:
 Check all the options via `-h`. You can also use a [Configuration] file
 instead.
 
-### Note
+### Note: to open the tcp port:
 
-Ubuntu open firewall port:
+Ubuntu: 
 
     root@InfatuatedMadeup-VM:~# ufw allow 22/tcp
     root@InfatuatedMadeup-VM:~# ufw allow 58282/tcp
+    
+CentOS:
+
+    # iptables -I INPUT -p tcp -m tcp --dport 443 -j ACCEPT
+    # service iptables save
 
 Client
 ------
