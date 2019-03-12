@@ -41,6 +41,11 @@ To stop:
 To check the log:
 
     sudo less /var/log/shadowsocks.log
+   
+### Note
+Ubuntu open firewall port:
+root@InfatuatedMadeup-VM:~# ufw allow 22/tcp
+root@InfatuatedMadeup-VM:~# ufw allow 58282/tcp
 
 Check all the options via `-h`. You can also use a [Configuration] file
 instead.
